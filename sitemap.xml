@@ -1,25 +1,8 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://dilshanss2008.github.io/Yoza/</loc>
-  </url>
-
-  <url>
-    <loc>https://dilshanss2008.github.io/Yoza/gallery.html</loc>
-  </url>
-
-  <url>
-    <loc>https://dilshanss2008.github.io/Yoza/shop.html</loc>
-  </url>
-
-  <url>
-    <loc>https://dilshanss2008.github.io/Yoza/faq.html</loc>
-  </url>
-
-  <url>
-    <loc>https://dilshanss2008.github.io/Yoza/contact.html</loc>
-  </url>
-
+  <url><loc>https://dilshanss2008.github.io/Yoza/</loc></url>
+  <url><loc>https://dilshanss2008.github.io/Yoza/gallery.html</loc></url>
+  <url><loc>https://dilshanss2008.github.io/Yoza/shop.html</loc></url>
+  <url><loc>https://dilshanss2008.github.io/Yoza/faq.html</loc></url>
+  <url><loc>https://dilshanss2008.github.io/Yoza/contact.html</loc></url>
 </urlset>
