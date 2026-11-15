@@ -31,3 +31,24 @@ body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;back
 .faq-item[open] summary:after{content:"−"}
 .faq-item p{max-width:680px;margin:0;padding:0 24px 20px 0;color:var(--muted);font-size:14px}
 @media(max-width:760px){.brand-oc{width:36px;height:42px}.hero{min-height:auto;padding:80px 0 90px}.faq{margin-top:52px}}
+
+/* Contact form and FAQ page */
+.contact-form{display:grid;gap:10px;padding:26px;background:rgba(255,250,243,.07);border:1px solid rgba(255,245,232,.2)}
+.contact-form label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#e2b86f;margin-top:5px}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;font:14px Arial,sans-serif;color:#f7eee3;background:rgba(255,250,243,.08);border:1px solid rgba(255,245,232,.25);border-radius:2px;padding:13px;outline:none}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#c9b5a4}
+.contact-form select option{color:#38281f}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#d6a653}
+.contact-form textarea{resize:vertical}
+.contact-form .btn{cursor:pointer;justify-self:start;margin-top:8px}
+.form-note{font-size:11px!important;color:#d8c4b1!important;margin:0}
+.contact-page .contact-grid{align-items:start}
+.contact-page .contact-links{margin-top:28px}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{cursor:pointer;list-style:none;padding:20px 38px 20px 0;position:relative;font:400 21px Georgia,serif}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"+";position:absolute;right:4px;top:16px;color:var(--terra);font:24px Arial,sans-serif}
+.faq-item[open] summary:after{content:"−"}
+.faq-item p{max-width:680px;margin:0;padding:0 24px 20px 0;color:var(--muted);font-size:14px}
+@media(max-width:760px){.contact-form{padding:20px}.contact-page .contact-grid{gap:28px}}
