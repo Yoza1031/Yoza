@@ -16,7 +16,7 @@ A warm, responsive artist portfolio built with plain HTML, CSS and JavaScript. N
 4. Select branch **main** and folder **/(root)**, then Save.
 5. Wait for GitHub to publish the site. The Pages section will show the website URL.
 
-## Add artwork to the gallery
+## Website assets\nUpload these two image files into an `images` folder in the repository, keeping their filenames exactly as shown:\n- `yoza-oc.png` — your transparent OC header portrait.\n- `yoza-meadow.jpg` — the soft meadow background.\n\nThe background is styled with a warm overlay and approximately 25% opacity. The OC image is already transparent; no black background removal is needed.\n\n## Add artwork to the gallery
 1. Create a folder named `images` in the repository.
 2. Upload your artwork there as JPG, PNG or WebP, for example `portrait-study.webp`.
 3. Open `gallery.html` and find a card inside `gallery-grid`.
