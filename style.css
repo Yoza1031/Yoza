@@ -11,3 +11,23 @@ footer{padding:25px 0;color:var(--muted);font-size:11px;letter-spacing:.08em}.fo
 @media(max-width:420px){.gallery-grid{grid-template-columns:1fr 1fr}.gallery-meta{font-size:10px}.hero h1{font-size:57px}}
 
 .page-hero{padding:76px 0 42px;border-bottom:1px solid var(--line)}.page-hero h1{font:400 clamp(48px,7vw,76px)/1 var(--serif);letter-spacing:-.05em;margin:12px 0}.page-hero p{max-width:560px;color:var(--muted)}.page-content{padding:48px 0 100px}.gallery-image img{width:100%;height:100%;object-fit:cover;display:block}.contact-page{background:#4a3328;color:#f7eee3;padding:65px 0}.contact-page .eyebrow{color:#e2b86f}.contact-page p{color:#d8c4b1;max-width:520px}.contact-page .contact-links a{color:#f7eee3}.contact-page .contact-links a span{color:#d6a653}.home-about{padding:70px 0 95px}.home-about .section-head{margin-bottom:24px}.home-about .feature{min-height:270px}@media(max-width:760px){.page-hero{padding:55px 0 30px}.page-content{padding:32px 0 70px}}
+/* YOZA finishing touches */
+body{position:relative;isolation:isolate}
+body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:url("images/yoza-meadow.jpg") center 42%/cover no-repeat;opacity:.25;mix-blend-mode:multiply}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:rgba(245,238,228,.48)}
+.topbar{background:rgba(245,238,228,.84)}
+.brand{display:inline-flex;align-items:center;gap:10px}
+.brand-oc{width:43px;height:48px;object-fit:contain;object-position:center bottom;display:block}
+.logo{display:inline-flex;align-items:center}
+.hero{grid-template-columns:1fr;min-height:540px}
+.hero-art{display:none}
+.faq{margin-top:72px;padding-top:42px;border-top:1px solid var(--line)}
+.faq h2{font:400 clamp(36px,5vw,52px)/1.05 var(--serif);margin:10px 0 24px}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{cursor:pointer;list-style:none;padding:20px 38px 20px 0;position:relative;font:400 21px var(--serif)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"+";position:absolute;right:4px;top:16px;color:var(--terra);font:24px var(--sans)}
+.faq-item[open] summary:after{content:"−"}
+.faq-item p{max-width:680px;margin:0;padding:0 24px 20px 0;color:var(--muted);font-size:14px}
+@media(max-width:760px){.brand-oc{width:36px;height:42px}.hero{min-height:auto;padding:80px 0 90px}.faq{margin-top:52px}}
