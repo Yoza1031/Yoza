@@ -135,3 +135,14 @@ body{background:linear-gradient(135deg,#f8f0e7 0%,#f2e7dc 38%,#eaf1f1 72%,#e4eef
 .price{margin-top:24px;padding-top:15px;border-top:1px solid var(--line);font:400 25px Georgia,serif;color:var(--terra2)}
 .custom-card{background:linear-gradient(135deg,#e4eef1,#f2e5d9)!important;border-color:#c7dce3!important}
 @media(max-width:760px){.price-card{min-height:240px}}
+
+
+/* Three balanced commission cards */
+.shop-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.shop-grid .custom-card{grid-column:1/-1;width:min(100%,760px);justify-self:center;min-height:190px}
+.price-card p strong{color:var(--terra2);font-weight:600}
+@media(max-width:760px){.shop-grid{grid-template-columns:1fr}.shop-grid .custom-card{grid-column:auto;width:100%;min-height:220px}}
+
+/* Keep Gallery's commission CTA fixed to the viewport */
+.gallery-float-cta{position:fixed!important;z-index:1000!important;right:24px;bottom:24px}
+@media(max-width:760px){.gallery-float-cta{right:14px;bottom:14px}}
