@@ -118,3 +118,13 @@ body{background:linear-gradient(135deg,#f8f0e7 0%,#f2e7dc 38%,#eaf1f1 72%,#e4eef
 .contact-form .btn:hover{background:#965a48!important}
 .faq-item summary:hover{color:#648da0!important}
 @media(prefers-reduced-motion:no-preference){.gallery-card,.service,.feature,.btn{transition:transform .24s ease,box-shadow .24s ease,background .24s ease,border-color .24s ease}.gallery-card:hover,.service:hover{transform:translateY(-4px)}}
+
+
+/* Softer Home hero background and always-visible Gallery commission link */
+.hero{background:transparent!important;overflow:visible}
+.hero:before{content:"";position:absolute;z-index:0;inset:24px -34px;border-radius:56px;background:radial-gradient(ellipse at 22% 45%,rgba(232,207,181,.56),transparent 58%),radial-gradient(ellipse at 82% 50%,rgba(169,200,213,.48),transparent 58%);filter:blur(25px);pointer-events:none}
+.hero:after{opacity:.7}
+.gallery-float-cta{position:fixed;z-index:20;right:24px;bottom:24px;display:inline-flex;align-items:center;gap:14px;padding:15px 20px;border-radius:999px;background:#b8755c;color:#fffaf4;border:1px solid rgba(255,250,244,.55);box-shadow:0 10px 30px rgba(56,45,42,.22);font-size:11px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.gallery-float-cta span{font-size:16px}
+.gallery-float-cta:hover{transform:translateY(-3px);background:#965a48;box-shadow:0 14px 34px rgba(56,45,42,.27)}
+@media(max-width:760px){.hero:before{inset:18px -10px;border-radius:34px}.gallery-float-cta{right:14px;bottom:14px;padding:13px 16px;font-size:10px}}
