@@ -20,6 +20,11 @@ function renderArtworks() {
     image.alt = art.title || 'Artwork by YOZA';
     image.loading = 'lazy';
     image.decoding = 'async';
+    const markLandscape = () => {
+      if (image.naturalWidth > image.naturalHeight * 1.45) card.classList.add('gallery-card--landscape');
+    };
+    image.addEventListener('load', markLandscape, { once: true });
+    if (image.complete) markLandscape();
     imageWrap.appendChild(image);
     const meta = document.createElement('div');
     meta.className = 'gallery-meta';
