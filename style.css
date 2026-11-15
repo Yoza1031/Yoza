@@ -128,3 +128,10 @@ body{background:linear-gradient(135deg,#f8f0e7 0%,#f2e7dc 38%,#eaf1f1 72%,#e4eef
 .gallery-float-cta span{font-size:16px}
 .gallery-float-cta:hover{transform:translateY(-3px);background:#965a48;box-shadow:0 14px 34px rgba(56,45,42,.27)}
 @media(max-width:760px){.hero:before{inset:18px -10px;border-radius:34px}.gallery-float-cta{right:14px;bottom:14px;padding:13px 16px;font-size:10px}}
+
+
+/* Digital commission pricing cards */
+.price-card{min-height:270px}
+.price{margin-top:24px;padding-top:15px;border-top:1px solid var(--line);font:400 25px Georgia,serif;color:var(--terra2)}
+.custom-card{background:linear-gradient(135deg,#e4eef1,#f2e5d9)!important;border-color:#c7dce3!important}
+@media(max-width:760px){.price-card{min-height:240px}}
