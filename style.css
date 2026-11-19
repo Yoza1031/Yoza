@@ -452,3 +452,24 @@ footer{
  background:linear-gradient(180deg,#353247 0%,#252735 58%,#151821 100%)!important;
 }
 @media(max-width:760px){body:before{opacity:.7!important}}
+
+/* YOZA — cool dreamscape: violet, aqua, blue, pearl light and ink shadows */
+body{background:radial-gradient(ellipse at 12% 10%,rgba(155,132,215,.34),transparent 40%),radial-gradient(ellipse at 88% 16%,rgba(105,207,218,.34),transparent 42%),radial-gradient(ellipse at 48% 58%,rgba(132,166,224,.25),transparent 46%),linear-gradient(145deg,#e9e5f3 0%,#e0edf1 38%,#e4e9f5 70%,#d9dce9 100%)!important;background-attachment:fixed!important}
+body:before{background-image:url("/Yoza/images/yoza-art-atmosphere.svg")!important;opacity:.88!important;filter:blur(25px) saturate(1.12)!important}
+body:after{opacity:.58!important;background:radial-gradient(ellipse at 18% 12%,rgba(255,255,255,.82),transparent 30%),radial-gradient(ellipse at 83% 24%,rgba(255,255,255,.62),transparent 32%),linear-gradient(118deg,transparent 34%,rgba(255,255,255,.32) 47%,transparent 52%),linear-gradient(72deg,transparent 62%,rgba(210,229,255,.22) 69%,transparent 74%)!important}
+.topbar{background:linear-gradient(105deg,rgba(242,238,250,.82),rgba(226,244,246,.78),rgba(235,239,250,.82))!important}
+.hero:before{background:radial-gradient(ellipse at 18% 46%,rgba(164,139,221,.52),transparent 56%),radial-gradient(ellipse at 79% 42%,rgba(111,207,220,.56),transparent 58%),radial-gradient(ellipse at 53% 8%,rgba(255,255,255,.82),transparent 50%),url("/Yoza/images/yoza-art-atmosphere.svg") center/cover no-repeat!important;filter:blur(38px) saturate(1.16)!important}
+.hero:after{color:rgba(255,255,255,.96)!important;text-shadow:0 0 18px rgba(255,255,255,.98),0 0 44px rgba(152,177,255,.82)!important}
+.hero .intro-lines:after{color:#fff!important;text-shadow:0 0 15px #fff,0 0 34px rgba(129,203,226,.82)!important}
+.hero .intro-lines:before{background:linear-gradient(100deg,rgba(255,255,255,.78),rgba(222,216,246,.58),rgba(205,238,243,.70))!important}
+.page-hero{background:radial-gradient(ellipse at 14% 30%,rgba(166,145,220,.42),transparent 54%),radial-gradient(ellipse at 86% 44%,rgba(113,204,220,.45),transparent 55%),radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.78),transparent 54%)!important}
+.gallery-card:nth-child(4n+1){background:linear-gradient(140deg,rgba(255,255,255,.90),rgba(222,215,244,.68),rgba(211,235,240,.78))!important}
+.gallery-card:nth-child(4n+2){background:linear-gradient(140deg,rgba(255,255,255,.92),rgba(202,232,239,.78),rgba(220,222,246,.76))!important}
+.gallery-card:nth-child(4n+3){background:linear-gradient(140deg,rgba(255,255,255,.90),rgba(216,208,241,.76),rgba(207,235,237,.78))!important}
+.gallery-card:nth-child(4n){background:linear-gradient(140deg,rgba(255,255,255,.92),rgba(207,226,244,.76),rgba(225,219,245,.78))!important}
+.gallery-meta span:last-child{background:linear-gradient(100deg,rgba(206,194,239,.58),rgba(185,229,235,.72))!important;color:#55536f!important}
+.btn,.gallery-float-cta{background:linear-gradient(110deg,#8273bd,#779fc7 52%,#68b9c4)!important;box-shadow:0 8px 26px rgba(67,65,112,.20),inset 0 1px rgba(255,255,255,.48)!important}
+.btn:hover,.gallery-float-cta:hover{background:linear-gradient(110deg,#7162ad,#688db8 52%,#56aab7)!important}
+.contact,.contact-page{background:radial-gradient(ellipse at 12% 0%,rgba(136,111,190,.34),transparent 42%),radial-gradient(ellipse at 88% 12%,rgba(85,166,185,.28),transparent 45%),linear-gradient(155deg,#373448 0%,#292b3a 52%,#171a25 100%)!important}
+footer{background:linear-gradient(180deg,#353247 0%,#252735 58%,#151821 100%)!important}
+@media(max-width:760px){body:before{opacity:.7!important}}
