@@ -565,3 +565,34 @@ footer{background:linear-gradient(180deg,#353247 0%,#252735 58%,#151821 100%)!im
 @media(max-width:850px){.home-hero{grid-template-columns:1fr!important;gap:5px!important;padding:64px 0 68px!important}.home-art-stage{height:450px;margin-top:5px}.sketch-card{width:min(78%,360px)}.home-section-heading{align-items:start}.feature-showcase{grid-template-columns:1fr;gap:10px}.showcase-art{min-height:300px}.showcase-copy{padding:24px 12px 20px}.home-contact{margin-top:75px;padding:58px 7%}}
 @media(max-width:600px){.home-hero{padding-top:54px!important}.home-art-stage{height:370px}.orbit-one{width:330px;height:330px}.orbit-two{width:380px;height:380px}.sketch-card{width:78%;padding:12px}.floating-tag{font-size:10px;padding:7px 10px}.tag-left{left:-1%;top:18%}.tag-right{right:-1%;bottom:13%}.home-marquee{padding:12px 0}.marquee-track{justify-content:flex-start;gap:23px;padding-left:18px}.home-feature{padding:76px 0}.home-section-heading{display:block}.home-section-heading>p{margin-top:18px}.home-about{padding:76px 0}.about-mark{width:56px;height:56px;font-size:27px;margin-top:22px}.home-about .feature-grid{grid-template-columns:1fr}.home-about .feature{min-height:245px;padding:25px}.home-about .feature .big{font-size:31px}.home-contact{margin-top:55px;margin-bottom:55px;padding:48px 25px;border-radius:13px}.contact-sign{right:7%;bottom:8%;font-size:27px;opacity:.65}.home-footer .footer-row{gap:8px}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.marquee-track{animation:none}}
+
+/* Performance pass: preserve the look without expensive full-screen blur layers */
+html{scroll-behavior:smooth}
+body{background-attachment:scroll!important}
+body:before{position:absolute!important;inset:0 0 auto!important;height:100vh!important;max-height:900px!important;background:url("/Yoza/images/yoza-art-atmosphere.svg") center top/cover no-repeat!important;opacity:.42!important;filter:none!important;mix-blend-mode:normal!important}
+body:after{position:absolute!important;inset:0 0 auto!important;height:100vh!important;max-height:900px!important;background:linear-gradient(145deg,rgba(244,241,252,.28),rgba(224,244,245,.22),rgba(28,30,43,.05))!important}
+.topbar{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:rgba(239,239,248,.96)!important}
+body:before,body:after{pointer-events:none}
+.art-glow{filter:none!important;background:radial-gradient(ellipse,rgba(166,151,221,.25),rgba(131,207,215,.16) 46%,transparent 72%)!important}
+.sketch-card,.floating-tag{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.sketch-card{background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(244,242,251,.92) 52%,rgba(225,244,245,.9))!important}
+.floating-tag{background:rgba(255,255,255,.86)!important}
+.showcase-art:before{filter:none!important;inset:0!important;background:radial-gradient(ellipse at 24% 35%,rgba(255,255,255,.76),transparent 38%),radial-gradient(ellipse at 76% 65%,rgba(116,190,205,.5),transparent 42%),radial-gradient(ellipse at 52% 40%,rgba(158,133,205,.38),transparent 52%)!important}
+.showcase-wash{filter:none!important;opacity:1!important;border-radius:0!important}
+.wash-violet{inset:0 auto auto 0;width:58%;height:100%;background:radial-gradient(ellipse at 30% 35%,rgba(145,122,195,.38),transparent 70%)!important}
+.wash-aqua{inset:0 0 auto auto;width:62%;height:100%;background:radial-gradient(ellipse at 70% 68%,rgba(103,194,204,.38),transparent 70%)!important}
+.home-contact:before{filter:none!important;inset:0!important;background:radial-gradient(ellipse at 18% 20%,rgba(151,127,203,.38),transparent 45%),radial-gradient(ellipse at 85% 35%,rgba(94,184,198,.3),transparent 45%),linear-gradient(115deg,transparent 38%,rgba(255,255,255,.1) 49%,transparent 57%)!important}
+.art-lightbox{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:rgba(24,22,32,.97)!important}
+.gallery-card,.service,.feature{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.home-feature,.home-about,.home-contact{content-visibility:auto;contain-intrinsic-size:auto 650px}
+@media(max-width:760px){
+ body:before{height:620px!important;max-height:75vh!important;opacity:.3!important}
+ body:after{height:620px!important;max-height:75vh!important}
+ .home-hero{min-height:auto!important}
+ .orbit-two{display:none}
+ .stage-spark{text-shadow:0 0 7px rgba(255,255,255,.9)!important}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .reveal{opacity:1!important;transform:none!important;transition:none!important}
+}
