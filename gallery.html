@@ -47,10 +47,15 @@ function renderArtworks() {
     imageWrap.setAttribute('aria-label', 'View ' + (art.title || 'artwork') + ' full screen');
     imageWrap.addEventListener('click', () => openArtwork(art, imageWrap));
     const image = document.createElement('img');
-    image.src = art.src;
+    const rawArtworkUrl = new URL(art.src, 'https://raw.githubusercontent.com/Yoza1031/Yoza/main/').href;
+    const optimizedPreview = 'https://images.weserv.nl/?url=' + encodeURIComponent(rawArtworkUrl) + '&w=1100&q=78&output=webp';
+    image.src = optimizedPreview;
+    image.onerror = () => { if (image.src !== rawArtworkUrl) image.src = rawArtworkUrl; };
+    image.fetchPriority = 'low';
     image.alt = art.title || 'Artwork by YOZA';
     image.loading = 'lazy';
     image.decoding = 'async';
+    image.style.aspectRatio = '4 / 5';
     const markLandscape = () => {
       if (image.naturalWidth > image.naturalHeight * 1.45) card.classList.add('gallery-card--landscape');
     };
