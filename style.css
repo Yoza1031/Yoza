@@ -357,3 +357,27 @@ footer .wrap{position:relative;z-index:1}
   .hero{border-radius:24px}
   .hero:before{inset:8px -6px!important}
 }
+
+/* YOZA — feathered painterly atmosphere */
+body{position:relative;isolation:isolate;background:radial-gradient(ellipse at 12% 14%,rgba(244,190,170,.42),transparent 39%),radial-gradient(ellipse at 86% 18%,rgba(158,198,216,.43),transparent 42%),radial-gradient(ellipse at 50% 66%,rgba(207,179,213,.28),transparent 44%),linear-gradient(145deg,#f6e9df 0%,#e9eef0 42%,#f2e6e9 76%,#e8e8ed 100%)!important;background-attachment:fixed!important}
+body:before{content:"";position:fixed;z-index:-1;pointer-events:none;inset:-100px;background:url("/Yoza/images/yoza-art-atmosphere.svg") center 8%/cover no-repeat;opacity:.78;filter:blur(22px) saturate(1.08);transform:scale(1.06);-webkit-mask-image:radial-gradient(ellipse 78% 72% at 50% 42%,#000 38%,rgba(0,0,0,.88) 60%,transparent 100%);mask-image:radial-gradient(ellipse 78% 72% at 50% 42%,#000 38%,rgba(0,0,0,.88) 60%,transparent 100%)}
+body:after{content:"";position:fixed;z-index:-1;pointer-events:none;inset:0;opacity:.42;background:radial-gradient(ellipse at 18% 12%,rgba(255,249,239,.72),transparent 28%),radial-gradient(ellipse at 83% 24%,rgba(255,255,255,.48),transparent 30%),linear-gradient(118deg,transparent 34%,rgba(255,255,255,.22) 47%,transparent 52%),linear-gradient(72deg,transparent 62%,rgba(255,236,224,.18) 69%,transparent 74%);mix-blend-mode:screen}
+.topbar{background:linear-gradient(105deg,rgba(250,242,235,.78),rgba(234,242,243,.72),rgba(249,237,240,.78))!important;backdrop-filter:blur(18px) saturate(1.12);-webkit-backdrop-filter:blur(18px) saturate(1.12);border-bottom:1px solid rgba(255,255,255,.58)!important}
+.hero{position:relative;isolation:isolate;overflow:visible!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.hero:before{content:"";position:absolute;z-index:-1;pointer-events:none;inset:-100px -9vw;background:radial-gradient(ellipse at 18% 46%,rgba(243,187,163,.60),transparent 56%),radial-gradient(ellipse at 79% 42%,rgba(157,199,217,.62),transparent 58%),radial-gradient(ellipse at 53% 8%,rgba(255,255,255,.72),transparent 50%),url("/Yoza/images/yoza-art-atmosphere.svg") center/cover no-repeat;filter:blur(34px) saturate(1.12);opacity:.9;-webkit-mask-image:radial-gradient(ellipse 74% 68% at 50% 48%,#000 34%,rgba(0,0,0,.84) 59%,transparent 100%);mask-image:radial-gradient(ellipse 74% 68% at 50% 48%,#000 34%,rgba(0,0,0,.84) 59%,transparent 100%)}
+.hero:after{content:"✦";position:absolute;pointer-events:none;z-index:0;top:10%;right:9%;color:rgba(255,255,255,.8);font-size:30px;text-shadow:0 0 18px rgba(255,255,255,.95),0 0 40px rgba(244,190,170,.8);border:0!important;box-shadow:none!important;animation:yoza-glimmer 5s ease-in-out infinite alternate}
+@keyframes yoza-glimmer{from{opacity:.35;transform:translateY(4px) scale(.82)}to{opacity:.95;transform:translateY(-5px) scale(1.12)}}
+.hero .intro-lines:after{color:rgba(255,255,255,.92)!important;text-shadow:0 0 14px rgba(255,255,255,.95),0 0 30px rgba(220,171,166,.65)}
+.hero .intro-lines h1{text-shadow:0 3px 28px rgba(255,255,255,.78),0 1px 2px rgba(76,61,75,.08)}
+.hero .intro-lines:before{background:linear-gradient(100deg,rgba(255,255,255,.68),rgba(246,221,212,.55),rgba(218,234,239,.62))!important;border-color:rgba(255,255,255,.72)!important;box-shadow:0 5px 25px rgba(100,81,99,.07),inset 0 1px rgba(255,255,255,.8)}
+.page-hero{background:radial-gradient(ellipse at 14% 30%,rgba(241,188,165,.48),transparent 54%),radial-gradient(ellipse at 86% 44%,rgba(159,200,218,.52),transparent 55%),radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.68),transparent 54%)!important;border:0!important}
+.gallery-card,.service,.feature{border:1px solid rgba(255,255,255,.7)!important;box-shadow:0 12px 34px rgba(78,63,79,.075),inset 0 1px rgba(255,255,255,.76)!important;backdrop-filter:blur(12px) saturate(1.08);-webkit-backdrop-filter:blur(12px) saturate(1.08)}
+.gallery-card:nth-child(4n+1){background:linear-gradient(140deg,rgba(255,250,245,.88),rgba(242,215,205,.62),rgba(226,237,239,.75))!important}
+.gallery-card:nth-child(4n+2){background:linear-gradient(140deg,rgba(255,255,255,.9),rgba(213,232,236,.78),rgba(231,219,235,.74))!important}
+.gallery-card:nth-child(4n+3){background:linear-gradient(140deg,rgba(255,255,255,.88),rgba(244,216,218,.76),rgba(235,224,238,.78))!important}
+.gallery-card:nth-child(4n){background:linear-gradient(140deg,rgba(255,255,255,.9),rgba(245,231,204,.76),rgba(215,232,224,.78))!important}
+.btn,.gallery-float-cta{background:linear-gradient(110deg,#bd817b,#c49a91 48%,#91aebb)!important;border:1px solid rgba(255,255,255,.6)!important;box-shadow:0 8px 24px rgba(116,91,108,.16),inset 0 1px rgba(255,255,255,.42)!important}
+.contact,.contact-page{background:radial-gradient(ellipse at 12% 0%,rgba(191,132,132,.34),transparent 42%),radial-gradient(ellipse at 88% 12%,rgba(119,157,172,.30),transparent 45%),linear-gradient(155deg,#514652 0%,#3d3c49 52%,#292b35 100%)!important}
+footer{background:linear-gradient(180deg,#3e3944 0%,#302f39 65%,#242731 100%)!important}
+@media(max-width:760px){body:before{background-position:center top;background-size:auto 82vh;opacity:.62;filter:blur(25px) saturate(1.08)}.hero:before{inset:-60px -8vw;filter:blur(27px)}}
+@media(prefers-reduced-motion:reduce){.hero:after{animation:none}}
