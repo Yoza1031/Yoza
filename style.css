@@ -596,3 +596,38 @@ body:before,body:after{pointer-events:none}
  html{scroll-behavior:auto}
  .reveal{opacity:1!important;transform:none!important;transition:none!important}
 }
+
+
+/* YOZA — center the homepage story intro for a calmer, balanced composition */
+.home-feature{
+  min-height:430px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:76px 0 82px;
+}
+.home-feature .home-section-heading{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  margin:0;
+  text-align:center;
+}
+.home-feature .home-section-heading > div{width:100%}
+.home-feature .home-section-heading h2{
+  margin:14px auto 0;
+  text-align:center;
+}
+.home-feature .home-section-heading > p{
+  max-width:560px;
+  margin:0 auto;
+  text-align:center;
+}
+@media(max-width:600px){
+  .home-feature{min-height:360px;padding:64px 0}
+  .home-feature .home-section-heading{gap:16px}
+  .home-feature .home-section-heading h2{font-size:clamp(40px,11vw,54px)}
+}
