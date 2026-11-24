@@ -631,3 +631,48 @@ body:before,body:after{pointer-events:none}
   .home-feature .home-section-heading{gap:16px}
   .home-feature .home-section-heading h2{font-size:clamp(40px,11vw,54px)}
 }
+
+
+/* YOZA refinement — deeper contrast + lighter rendering cost */
+:root{
+  --paper:#e9e5ef;
+  --paper2:#dcd6e8;
+  --ink:#292638;
+  --muted:#57546a;
+  --terra:#68558f;
+  --terra2:#51416f;
+  --line:#c1b8d2;
+  --white:#f1eef6;
+  --yoza-ink:#292638;
+  --yoza-muted:#57546a;
+}
+body{color:#292638}
+body:before{opacity:.26!important}
+body:after{
+  background:linear-gradient(145deg,rgba(34,30,52,.10),rgba(49,43,68,.06),rgba(28,30,43,.12))!important;
+}
+.topbar{background:rgba(226,222,237,.97)!important;border-bottom-color:rgba(112,99,139,.28)!important}
+.links,.home-kicker,.home-note,.home-section-heading>p,.home-description,
+.showcase-copy p,.home-about .feature p{color:#514d63!important}
+.home-hero h1,.home-section-heading h2{color:#302b43!important}
+.yoza-name,.home-section-heading h2 em,.eyebrow,.text-link,
+.home-about .feature small{color:#625184!important}
+.home-marquee{background:linear-gradient(90deg,rgba(190,180,216,.72),rgba(183,211,216,.68),rgba(190,180,216,.72))!important;border-color:rgba(104,91,133,.24)!important}
+.marquee-track{color:#4e4963!important}
+.home-about{background:linear-gradient(125deg,rgba(197,188,218,.82),rgba(188,213,216,.78) 52%,rgba(203,195,222,.82))!important}
+.home-about .feature{
+  background:linear-gradient(140deg,rgba(242,238,247,.94),rgba(210,201,229,.92),rgba(197,220,222,.9))!important;
+  border-color:rgba(123,108,151,.3)!important;
+  box-shadow:0 8px 22px rgba(40,35,60,.07)!important;
+}
+.home-about .feature:nth-child(2){background:linear-gradient(140deg,rgba(238,235,246,.94),rgba(197,216,222,.92),rgba(216,205,231,.9))!important}
+.home-about .feature .big,.showcase-copy h3{color:#38334c!important}
+.sketch-card{box-shadow:0 18px 42px rgba(35,31,52,.13),inset 0 1px 0 #fff!important}
+.gallery-card{background:#e9e5ef!important;border-color:#bcb2ce!important}
+.gallery-meta{color:#302b43}
+.gallery-meta span:last-child{color:#57546a!important}
+.page-hero p,.gallery-empty,footer{color:#57546a!important}
+.service,.feature{border-color:#bcb2ce}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
