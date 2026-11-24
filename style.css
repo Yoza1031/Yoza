@@ -731,3 +731,71 @@ body:after{
   .shop-grid{grid-template-columns:minmax(0,1fr);gap:14px}
   .shop-grid .service{padding:22px}
 }
+
+
+/* Shop readability: clearer hierarchy and larger commission prices */
+.shop-grid .service{
+  color:var(--ink);
+  padding:clamp(24px,3.5vw,38px);
+}
+.shop-grid .service-top{
+  font-size:11px;
+  font-weight:700;
+  color:#625184;
+  letter-spacing:.15em;
+}
+.shop-grid .service h3{
+  font-size:clamp(31px,3.8vw,38px);
+  line-height:1.12;
+  letter-spacing:-.02em;
+  margin:18px 0 14px;
+}
+.shop-grid .service p{
+  color:#454155;
+  font-size:16px;
+  line-height:1.8;
+  max-width:720px;
+  margin:0 0 16px;
+}
+.shop-grid .service h4{
+  font-size:23px;
+  font-weight:500;
+  margin:28px 0 10px;
+  padding-bottom:7px;
+  border-bottom:1px solid var(--line);
+}
+.shop-grid .service p strong,
+.shop-grid .service li strong{
+  color:#493866;
+  font-size:19px;
+  font-weight:700;
+}
+.shop-grid .service ul{
+  color:#454155;
+  font-size:16px;
+  line-height:2.1;
+  margin:20px 0;
+}
+.shop-grid .service li{padding-left:5px}
+.shop-grid .service p small{
+  display:block;
+  color:#5a5669;
+  font-size:14px;
+  line-height:1.8;
+  margin-top:8px;
+}
+.shop-grid .service p:last-child{margin-bottom:0}
+.note{
+  color:#454155;
+  font-size:15px;
+  line-height:1.8;
+}
+.note strong{color:#302b43}
+@media(max-width:600px){
+  .shop-grid .service{padding:22px 20px}
+  .shop-grid .service p{font-size:15px;line-height:1.75}
+  .shop-grid .service p strong,
+  .shop-grid .service li strong{font-size:18px}
+  .shop-grid .service h3{font-size:30px}
+  .shop-grid .service h4{font-size:21px}
+}
