@@ -799,3 +799,36 @@ body:after{
   .shop-grid .service h3{font-size:30px}
   .shop-grid .service h4{font-size:21px}
 }
+
+
+/* Site-wide horizontal overflow guard */
+html{
+  width:100%;
+  max-width:100%;
+  overflow-x:clip;
+}
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:clip;
+}
+*,*::before,*::after{
+  box-sizing:border-box;
+}
+img,video,iframe,svg,canvas{
+  max-width:100%;
+}
+@supports not (overflow:clip){
+  html,body{overflow-x:hidden}
+}
+@media(max-width:760px){
+  .wrap,main,header,footer,section{
+    max-width:100%;
+  }
+  .hero,.home-hero,.page-hero,.page-content,
+  .home-feature,.home-about,.home-contact,
+  .contact,.contact-page{
+    max-width:100%;
+    overflow-x:clip;
+  }
+}
