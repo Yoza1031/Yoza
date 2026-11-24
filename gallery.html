@@ -56,7 +56,6 @@ function renderArtworks() {
     image.alt = art.title || 'Artwork by YOZA';
     image.loading = 'lazy';
     image.decoding = 'async';
-    image.style.aspectRatio = '4 / 5';
     const markLandscape = () => {
       if (image.naturalWidth > image.naturalHeight * 1.45) card.classList.add('gallery-card--landscape');
     };
